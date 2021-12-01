@@ -1,0 +1,50 @@
+section {
+    display: flex;
+}
+
+div {
+    flex: 1;
+    margin: 0 .5rem;
+    border-radius: 6px;
+    padding: .5rem;
+    background-color: #ECECEB;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    width: 90%;
+    display: block;
+    border: 1px solid #10316B;
+    color: #E25822;
+    letter-spacing: 4px;
+    margin-top: 2.5rem;
+    text-align: center;
+    padding: 3px;
+    border-radius: 6px;
+
+}
+
+h3 {
+    color: #E25822;
+}
+
+p {
+    color: #10316B;
+}
+
+.cat {
+    flex: 1;
+    display: flex;
+}
+
+.picture {
+    flex: 1;
+    padding: 10px;
+}

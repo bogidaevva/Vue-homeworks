@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Домашняя работа 1</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/lesson1.css">
+</head>
+<body>
+    <section id="app">
+        <div v-for="cat in cats" class="cat">
+            <div class="picture">
+                <img v-bind:src="cat.img">
+            </div>
+            <div><h3>{{cat.name}}</h3>
+                <p>возраст: {{cat.age}}</p>
+                <p>расцветка: {{cat.color}}</p>
+            <a href="#">подробнее</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/lesson1.js"></script>
+</body>
+</html>
