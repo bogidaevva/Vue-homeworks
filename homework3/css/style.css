@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+#services {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #FDFCE5;
+    color: #799fbd;
+    padding: 2rem 4rem;
+}
+
+#services div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#services span {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    text-transform: uppercase;
+}
+
+#services p {
+    color: #dab681;
+    font-size: large;
+
+}
+

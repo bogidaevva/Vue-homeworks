@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Домашняя работа 3</title>
+    <script src="https://unpkg.com/vue@next"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="services">
+        <p>выберите услугу</p>
+        <div v-for="service in services">
+            <span v-on:click="addService(service)">{{ service.title }}</span>
+            <span>{{ service.price }}</span>
+        </div>
+        <p>выбранные услуги:</p>
+        <span v-on:click="deleteService(service)" v-for="service in selectedServices">{{ service.title }}</span>
+        <p>итоговая стоимость: {{ totalCost }}</p>
+    </section>
+
+    <script src="js/lesson3.js"></script>
+</body>
+</html>
