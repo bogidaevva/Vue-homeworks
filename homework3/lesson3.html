@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <section id="articles">
+        <label for="title">Введите название статьи</label>
+        <input type="text" id="title" name="title" v-model="entStr">
+        <div v-for="article in searchArticle(entStr, articles)">
+            <h4>{{ article.title }}</h4>
+            <img :src="article.image" :alt="article.title.toLowerCase()">
+        </div>
+    </section>
+
     <section id="services">
         <p>выберите услугу</p>
         <div v-for="service in services">

@@ -2,10 +2,20 @@
     box-sizing: border-box;
 }
 
+body {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 #services {
+    flex: 1;
     width: 40%;
     margin: 0 auto;
-    background-color: #FDFCE5;
     color: #799fbd;
     padding: 2rem 4rem;
 }
@@ -28,3 +38,11 @@
 
 }
 
+
+#articles {
+    flex: 1;
+}
+
+#articles div {
+    max-width: 70%;
+} 
